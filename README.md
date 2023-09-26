@@ -33,7 +33,7 @@ Key Design decisions
    Here since the dataset was very small, opted to use Pandas
    Also Pandas is more an analytical tool, I would not prefer it in prod for ETL or related stuff.
    
-3. Concurrency: Running requests concurrently as the Apis are independent of each other.
+3. Concurrency: Running requests concurrently as Api calss are independent.
    
 5. Parquet: Storing data in parquet format with snappy compression for faster analytics
 

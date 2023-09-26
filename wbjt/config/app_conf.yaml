@@ -1,0 +1,19 @@
+app_version: 1
+number_of_times_to_poll: 7
+concurrency: 5
+delete_history: True
+db_path: out/data/movie_provider_db
+movie_data_providers:
+  - name: filmworld
+    base_url: https://webjetapitest.azurewebsites.net/api/
+    summary_api: filmworld/movies/
+    details_api: filmworld/movie/
+    timeout: 10
+  - name: cinemaworld
+    base_url: https://webjetapitest.azurewebsites.net/api/
+    summary_api: cinemaworld/movies/
+    details_api: cinemaworld/movie/
+    timeout: 10
+
+
+

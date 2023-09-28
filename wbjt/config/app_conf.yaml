@@ -1,8 +1,15 @@
 app_version: 1
 number_of_times_to_poll: 7
 concurrency: 5
-delete_history: True
-db_path: out/data/movie_provider_db
+#store:
+#  type: parquet
+#  path: out/data/movie_provider_db
+store:
+  type: memory
+# query_engine:
+#   type: pandas
+query_engine:
+  type: custom
 movie_data_providers:
   - name: filmworld
     base_url: https://webjetapitest.azurewebsites.net/api/
